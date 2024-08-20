@@ -2735,9 +2735,10 @@ spec:
       containers:
       - args:
         - --leader-elect
-        - --diagnostics-address=${CAPI_DIAGNOSTICS_ADDRESS:=:8443}
-        - --insecure-diagnostics=${CAPI_INSECURE_DIAGNOSTICS:=false}
-        - --feature-gates=MachinePool=${EXP_MACHINE_POOL:=true},ClusterTopology=${CLUSTER_TOPOLOGY:=false}
+        - --diagnostics-address=:8443
+        - --insecure-diagnostics=false
+        - --feature-gates=MachinePool=false,ClusterResourceSet=false,ClusterTopology=true,RuntimeSDK=false,MachineSetPreflightChecks=false
+        - --use-deprecated-infra-machine-naming=false
         env:
         - name: POD_NAMESPACE
           valueFrom:
