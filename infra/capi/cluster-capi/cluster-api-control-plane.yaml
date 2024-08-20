@@ -8003,7 +8003,7 @@ spec:
         - --diagnostics-address=:8443
         - --insecure-diagnostics=false
         - --use-deprecated-infra-machine-naming=false
-        - --feature-gates=ClusterTopology=false,KubeadmBootstrapFormatIgnition=false
+        - --feature-gates=ClusterTopology=true,KubeadmBootstrapFormatIgnition=false
         command:
         - /manager
         env:
