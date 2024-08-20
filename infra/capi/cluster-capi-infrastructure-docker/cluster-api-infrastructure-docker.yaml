@@ -2738,6 +2738,7 @@ spec:
         - --diagnostics-address=:8443
         - --insecure-diagnostics=false
         - --feature-gates=MachinePool=false,ClusterTopology=true
+        env:
         - name: POD_NAMESPACE
           valueFrom:
             fieldRef:
