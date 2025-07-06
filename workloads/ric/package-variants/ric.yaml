@@ -6,7 +6,7 @@ spec:
   upstream:
     repo: catalog-workloads-ric
     package: pkg-example-ric
-    workspaceName: v5.0.0
+    workspaceName: v5
   downstream:
     repo: regional
     package: ric
